@@ -30,7 +30,6 @@ const getAll = (req, res) => res.status(200).send(projectData);
 // GET Route
 app.get("/all", getAll);
 
-
 // Callback function to complete POST '/add'
 const postData = (req, res) => {
     projectData = req.body;
@@ -43,7 +42,7 @@ app.post("/add", postData);
 const port = 4000;
 const hostname = "127.0.0.1";
 
-// function to test the server 
+// function to test the server
 const listening = () =>
 console.log(`Server running at http://${hostname}:${port}/`);
 
